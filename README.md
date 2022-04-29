@@ -59,5 +59,5 @@ It will be generated and open up automatically after execution
 └───cypress.json
 ```
 ### Sample Report
-![image](https://github.com/arbaaz100/webdriver-io-bdd/blob/master/.github/images/allureReport1.png)
-![image](https://github.com/arbaaz100/webdriver-io-bdd/blob/master/.github/images/allureReport2.png)
+![image](https://github.com/arbaaz100/cypress-bdd-framework/blob/main/Allure_1.PNG)
+![image](https://github.com/arbaaz100/cypress-bdd-framework/blob/main/Allure_2.PNG)
