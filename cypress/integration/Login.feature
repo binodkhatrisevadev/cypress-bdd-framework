@@ -1,12 +1,12 @@
 Feature: Feature name
 
     As a invalid user
-    I vcannot log into the site
+    I cannot log into the site
 
     As a valid user
-    I wan to login into the site
+    I want to login into the site
 
-    Scenario:Login as a Invalid User
+    Scenario: Login as a Invalid User
         Given I navigate to the Website
         When I fill username with "invalid username"
         And I fill password with "invalid password"

@@ -2,7 +2,7 @@ import LoginPage from "./loginPage";
 
 Given("I navigate to the Website", () => {
     LoginPage.visit()
-});
+})
 
 When("I fill username with {string}", username => {
     LoginPage.fillUsername(username)
