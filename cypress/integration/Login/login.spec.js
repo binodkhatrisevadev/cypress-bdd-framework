@@ -1,15 +1,27 @@
+import LoginPage from "./loginPage";
+
 Given("I navigate to the Website", () => {
-    cy.visit("https://opensource-demo.orangehrmlive.com")
+    LoginPage.visit()
 });
-When("I enter user name and password", () => {
-    cy.get("input[name=username]").type("Admin")
-    cy.get("input[name=password]").type("admin123")
+
+When("I fill username with {string}", username => {
+    LoginPage.fillUsername(username)
 })
 
-When("User click on sign in button", () => {
-    cy.get(".oxd-button").click();
+When("I fill password with {string}", password => {
+    LoginPage.fillPassword(password)
+})
+
+When("I click on sign in button", () => {
+    LoginPage.submit()
 })
 
 Then("Validate the title after login", () => {
-    cy.contains("Dashboard")
+    cy.contains("Dashboard").should('be.visible')
 })
+
+Then("I should see error message", () => {
+    LoginPage.errorMsg()
+})
+
+
