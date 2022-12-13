@@ -4,12 +4,22 @@ Given("I navigate to the Website", () => {
     LoginPage.visit()
 })
 
-When("I fill username with {string}", username => {
-    LoginPage.fillUsername(username)
+When("I provide with correct credentials", (table) => {
+    table.hashes().forEach(row => {
+        cy.log(row.username)
+        cy.log(row.password)
+        LoginPage.fillUsername(row.username)
+        LoginPage.fillPassword(row.password)
+    })
 })
 
-When("I fill password with {string}", password => {
-    LoginPage.fillPassword(password)
+When("I provide with incorrect credentials", (table) => {
+    table.hashes().forEach(row => {
+        cy.log(row.username)
+        cy.log(row.password)
+        LoginPage.fillUsername(row.username)
+        LoginPage.fillPassword(row.password)
+    })
 })
 
 When("I click on sign in button", () => {
