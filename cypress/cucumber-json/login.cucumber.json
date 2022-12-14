@@ -1,0 +1,146 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Feature name",
+    "line": 1,
+    "id": "feature-name",
+    "tags": [],
+    "uri": "Login.feature",
+    "elements": [
+      {
+        "id": "feature-name;login-as-a-valid-user",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login as a Valid User",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the Website",
+            "result": {
+              "status": "passed",
+              "duration": 14807000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Admin",
+                      "admin123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I provide with correct credentials",
+            "result": {
+              "status": "passed",
+              "duration": 1618000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click on sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 1617000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Validate the title after login",
+            "result": {
+              "status": "passed",
+              "duration": 536000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-name;login-as-a-invalid-user",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Login as a Invalid User",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the Website",
+            "result": {
+              "status": "passed",
+              "duration": 1353000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "invuser",
+                      "invpass"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I provide with incorrect credentials",
+            "result": {
+              "status": "passed",
+              "duration": 1441000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I click on sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 1759000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see error message",
+            "result": {
+              "status": "passed",
+              "duration": 520000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
