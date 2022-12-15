@@ -1,4 +1,4 @@
-Feature: Feature name
+Feature: Login Page
 
     Background:
         Given I navigate to the Website
@@ -16,4 +16,20 @@ Feature: Feature name
             | invuser  | invpass  |
         When I click on sign in button
         Then I should see error message
+
+    Scenario: Login with valid username and invalid password
+        When I provide with correct credentials
+            | username | password |
+            | Admin    | admin12  |
+        When I click on sign in button
+        Then I should see error message
+
+    Scenario: Login with invalid username and valid password
+        When I provide with incorrect credentials
+            | username | password |
+            | invuser  | admin123 |
+        When I click on sign in button
+        Then I should see error message
+
+
 
